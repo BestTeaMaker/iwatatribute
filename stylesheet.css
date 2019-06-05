@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  
+}
+
+#main {
+  display:grid;
+  grid-gap:10px 10px;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+    'header header'
+    'image content';
+}
+
+#title {
+  grid-area:header;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  margin:5px;
+}
+
+#title h1 {
+  color:white;
+  background-color:red;
+  margin:5px;
+  font-size:60px;
+  border-radius:30px;
+  padding: 10px 20px 10px 20px;
+}
+
+#title h2 {
+  color:red;
+  margin:auto;
+  font-family:'Roboto';
+  font-size:large;
+  margin:0;
+}
+
+#title h3 {
+  color:red;
+  margin:auto;
+  font-family:'Roboto';
+  font-size:small;
+  border-radius:20px;
+  border-style:solid;
+  border-color:red;
+  padding:5px;
+  margin:5px;
+}
+
+#img-div {
+  grid-area:image;
+  position:relative;
+}
+#image {
+  display:block;
+  margin:auto;
+  max-width:70%;
+  border-radius:50px;
+  border-style:solid;
+  border-color:red;
+  border-width:10px;
+}
+
+#img-caption{
+  position:relative;
+  color:white;
+  bottom:5em;
+  left:10em;
+  width:50%;
+  font-family:'Roboto';
+}
+
+#quote {
+  background-color:red;
+  border-radius:20px;
+  padding:15px;
+}
+
+#source {
+  background-color:red;
+  
+  padding:5px;
+  border-radius:20px;
+}
+
+#tribute-info {
+  grid-area:content;
+  background-color:pink;
+  padding: 5em;
+}
